@@ -1,19 +1,22 @@
-/* * {
-    margin: 0%;
-    padding: 0%;
+/* ১. CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-} */
-
-
-.open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
-/* shared styles */
+/* Font Style */
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Shared Styles */
+.secondary-bg {
+    background-color: #FFF8F3;
+}
 
 .text-primary {
     color: #FD6E0A;
@@ -31,29 +34,67 @@
     padding: 18px 35px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* header */
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 18px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.section-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #181818;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+/* Header Styles */
 header {
+    background-color: #FFF8F3;
     background-image: url("../assets/developer.png"), url("../assets/header_bg.png");
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: 22px 40px, right bottom;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-/* nav styles */
-
+/* Nav Styles */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 200px;
+    padding-top: 30px;
 }
 
 .nav-title {
     font-weight: 800;
     font-size: 45px;
-
 }
 
 nav ul {
@@ -71,12 +112,13 @@ nav ul a {
     font-size: 20px;
 }
 
-/* banner styles */
-
+/* Banner Styles */
 .banner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 35px 0 200px;
+    flex-grow: 1;
 }
 
 .banner-content {
@@ -91,13 +133,50 @@ nav ul a {
 .banner-title {
     font-size: 85px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .banner-description {
     font-size: 18px;
     font-weight: normal;
+    color: #757575;
+    margin-bottom: 30px;
 }
 
 .banner-profile-pic {
-    width: 580px;
+    width: 500px;
+    max-height: 80vh;
+    display: block;
+    align-self: flex-end;
+}
+
+/* Main Styles */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* About Section Styles */
+.about {
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 130px; /* নিচে 130px স্পেসের জন্য */
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.item-title {
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.item-description {
+    font-weight: 600;
+    color: #474747;
 }
