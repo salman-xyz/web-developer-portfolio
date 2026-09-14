@@ -57,7 +57,9 @@
 
 .section-title {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0%;
+    line-height: auto;
     color: #181818;
     margin-bottom: 30px;
 }
@@ -218,4 +220,58 @@ main section {
     color: #757575;
     line-height: 28px;
     font-size: 16px;
+}
+
+/* Resume Section Styles */
+.resume-container {
+    display: flex;
+    gap: 71px;
+    margin-bottom: 50px;
+}
+
+.resume-column {
+    flex: 1;
+}
+
+.resume-column-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.experience-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.experience-sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.experience-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    line-height: 28px;
+}
+
+.resume hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #D1D1D1;
+}
+
+.download-cv {
+    margin-top: 50px;
+}
+
+/* Resume টাইটেল এবং কনটেন্টের মধ্যকার স্পেস বাড়ানো */
+.resume .section-title {
+    margin-bottom: 113px;
 }
